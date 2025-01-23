@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 1 EV3</title>
+        <link href="static/css/estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Formulario de Notas</h1>
+        <form class='fnotas' action="/pagina1" method="POST">
+            <label for="nuno">Nota 1:</label><br>
+            <input type="text" id="nuno" name="nuno"><br><br>
+            <label for="ndos">Nota 2:</label><br>
+            <input type="text" id="ndos" name="ndos"><br><br>
+            <label for="ntres">Nota 3:</label><br>
+            <input type="text" id="ntres" name="ntres"><br><br>
+            <label for="asis">Asistencia (%):</label><br>
+            <input type="text" id="asis" name="asis"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        {% if pnotas is not none %}
+            <p>Promedio de Notas: {{ pnotas }}</p>
+            <p>Estado: {{ estado }}</p>
+        {% endif %}
+    </body>
+</html>

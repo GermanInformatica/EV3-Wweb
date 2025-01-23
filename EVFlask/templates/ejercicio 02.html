@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 2 EV3</title>
+        <link href="static/css/estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Formulario de Nombres</h1>
+        <form class="fnombres" action="/pagina2" method="POST">
+            <label for="nuno">Nombre 1:</label><br>
+            <input type="text" id="nuno" name="nuno"><br><br>
+            <label for="ndos">Nombre 2:</label><br>
+            <input type="text" id="ndos" name="ndos"><br><br>
+            <label for="ntres">Nombre 3:</label><br>
+            <input type="text" id="ntres" name="ntres"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        {% if nombre_mas_largo %}
+            <p>El nombre con mayor cantidad de caracteres es: {{ nombre_mas_largo }}</p>
+            <p>El nombre tiene: {{ longitud_mas_larga }} caracteres.</p>
+        {% endif %}
+    </body>
+</html>

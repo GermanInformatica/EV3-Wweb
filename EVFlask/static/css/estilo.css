@@ -1,0 +1,32 @@
+body {
+    background-color: #84daff;
+    font-family: Arial;
+}
+.index {
+    font-size: 1.2em;
+    text-align: center;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.fnombres {
+    font-size: 1.2em;
+    text-align: center;
+}
+input[type="submit"] {
+    padding: 9px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
